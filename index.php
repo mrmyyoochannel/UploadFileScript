@@ -4,7 +4,7 @@ $uploadDirectory = "/uploads/";
 
 $errors = []; // Store errors here
 
-$fileExtensionsAllowed = ['jpeg','jpg','png','pdf','py','rar','mp4','exe']; // These will be the only file extensions allowed 
+$fileExtensionsAllowed = ['jpeg','jpg','png','pdf','py','rar','mp4','exe','c','ccp']; // These will be the only file extensions allowed 
 
 if(isset($_FILES['the_file'])) {
     $fileName = $_FILES['the_file']['name'];
@@ -19,7 +19,7 @@ if(isset($_FILES['the_file'])) {
     if (isset($_POST['submit'])) {
 
         if (!in_array($fileExtension, $fileExtensionsAllowed)) {
-            $errors[] = "This file extension is not allowed. Please upload a 'jpeg','jpg','png','pdf','py','rar','exe' file";
+            $errors[] = "This file extension is not allowed. Please upload a 'jpeg','jpg','png','pdf','py','rar','mp4','exe','c','ccp' file";
             echo "<script>alert('File extension not allowed');</script>";
         }
 
@@ -139,6 +139,7 @@ if(isset($_FILES['the_file'])) {
         <div class="progress-container">
             <div class="progress-bar" id="myBar">0%</div>
         </div>
+		<a href="filelist.php">filelist</a>
     </form>
 
     <script>

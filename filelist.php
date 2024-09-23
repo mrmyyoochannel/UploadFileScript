@@ -66,4 +66,5 @@ $sec = "10";
         echo "Watch the page reload itself in 10 second!";
     ?>
 </body>
+<a href="index.php">home</a>
 </html>

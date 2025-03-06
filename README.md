@@ -1,6 +1,7 @@
 # UploadFileScript
-Php Upload FileScript
-<br>
-<a>------------------------------------------------</a>
-<br>
-[myprofile](https://myyoomi.carrd.co/)
+
+PHP Upload FileScript
+
+------------------------------------------------
+
+For more information, check out [my profile](https://myyoomi.carrd.co/).
